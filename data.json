@@ -1,0 +1,120 @@
+{
+  "title": [
+    "WHERE DID",
+    "MY WEEK GO?"
+  ],
+  "kicker": "DATA SKETCH 3-4",
+  "dateRange": "NOV 2—8, 2026",
+  "dek": [
+    "one week of a college junior, one capsule per day.",
+    "each capsule is 24 hours. the sun on top is how far i walked."
+  ],
+  "stickers": [
+    {
+      "day": "Wed",
+      "text": [
+        "MIDTERM",
+        "EVE"
+      ],
+      "ink": "yellow",
+      "place": "left"
+    },
+    {
+      "day": "Sat",
+      "text": [
+        "GAME",
+        "DAY!"
+      ],
+      "ink": "pink",
+      "place": "left"
+    },
+    {
+      "day": "Sun",
+      "text": [
+        "SUNDAY",
+        "SCARIES"
+      ],
+      "ink": "yellow",
+      "place": "top"
+    }
+  ],
+  "fields": {
+    "steps": "steps walked that day",
+    "screen": "phone screen time in hours",
+    "sleep": "hours slept that night",
+    "mood": "end-of-day mood, 1 = rough, 5 = great",
+    "study": "hours studying outside class"
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "date": "Nov 2",
+      "steps": 9200,
+      "screen": 4.5,
+      "sleep": 6.5,
+      "mood": 3,
+      "study": 3,
+      "note": "Back-to-back classes, then leg day"
+    },
+    {
+      "day": "Tue",
+      "date": "Nov 3",
+      "steps": 7800,
+      "screen": 3.8,
+      "sleep": 7.5,
+      "mood": 4,
+      "study": 4.5,
+      "note": "Finished the lab report a day early"
+    },
+    {
+      "day": "Wed",
+      "date": "Nov 4",
+      "steps": 10400,
+      "screen": 3.2,
+      "sleep": 5.5,
+      "mood": 2,
+      "study": 5.5,
+      "note": "Stats midterm tomorrow, library until close"
+    },
+    {
+      "day": "Thu",
+      "date": "Nov 5",
+      "steps": 14200,
+      "screen": 4.1,
+      "sleep": 5,
+      "mood": 5,
+      "study": 2,
+      "note": "Midterm done, chapter meeting, then downtown"
+    },
+    {
+      "day": "Fri",
+      "date": "Nov 6",
+      "steps": 13100,
+      "screen": 5.5,
+      "sleep": 7,
+      "mood": 3,
+      "study": 1,
+      "note": "Barely made my 8am, napped, went back out"
+    },
+    {
+      "day": "Sat",
+      "date": "Nov 7",
+      "steps": 16800,
+      "screen": 6.2,
+      "sleep": 8.5,
+      "mood": 5,
+      "study": 0,
+      "note": "Gameday. Walked everywhere."
+    },
+    {
+      "day": "Sun",
+      "date": "Nov 8",
+      "steps": 4100,
+      "screen": 7.4,
+      "sleep": 7.5,
+      "mood": 2,
+      "study": 4,
+      "note": "Laundry, group project, Sunday scaries"
+    }
+  ]
+}

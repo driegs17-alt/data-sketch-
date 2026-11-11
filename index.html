@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Where did my week go? · 3-4 Data Sketch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- p5.js 2.x: needed for await loadJSON() inside async setup() -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@2/lib/p5.min.js"></script>
+  <script src="sketch.js"></script>
+</head>
+<body>
+  <main>
+    <figure id="sketch-holder" class="print" aria-label="Riso-style data sketch of one week: seven suns on seven 24-hour capsules. Full numbers are in the table below."></figure>
+
+    <section class="cols">
+      <div>
+        <h2>The week</h2>
+        <p><b>Mon–Wed:</b> small suns, fat yellow study bands. Wednesday is the night before my stats midterm, with the most studying of the week and a frown.</p>
+        <p><b>Thu–Sat:</b> the midterm is done. The suns get huge, the yellow almost disappears, and Saturday (gameday) gets the biggest sun and the biggest grin.</p>
+        <p><b>Sun:</b> the smallest sun, the most pink (7.4 h on my phone), and the frown is back.</p>
+      </div>
+      <div>
+        <h2>The mapping</h2>
+        <ul class="key">
+          <li><span class="chip sun"></span><b>1. Sun size</b> = steps walked</li>
+          <li><span class="chip face">☺</span><b>2. Face</b> = mood, 1 (rough) to 5 (great)</li>
+          <li><span class="chip paper"></span><b>3. Capsule</b> = 24 hours, filling from the bottom:</li>
+          <li class="sub"><span class="chip blue"></span>sleep</li>
+          <li class="sub"><span class="chip yellow"></span>studying</li>
+          <li class="sub"><span class="chip pink"></span>on my phone</li>
+          <li class="sub"><span class="chip paper"></span>everything else</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sketch first</h2>
+      <p>I planned the concept and layout on paper before coding.</p>
+      <img class="process" src="design-sketch.png" alt="Planning sketch: a sun with a face sitting on a 24-hour capsule, with notes on what each part means, plus a thumbnail of the poster layout." />
+    </section>
+
+    <section>
+      <h2>The data</h2>
+      <p class="small">Stored in <code>data.json</code> and loaded with <code>await loadJSON('data.json')</code> inside <code>async function setup()</code>.</p>
+      <div class="table-wrap">
+        <table id="data-table">
+          <thead><tr><th>day</th><th>steps</th><th>sleep h</th><th>study h</th><th>phone h</th><th>mood</th><th>note</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>Inspired by <i>Dear Data</i> by Giorgia Lupi &amp; Stefanie Posavec.</footer>
+  </main>
+</body>
+</html>
